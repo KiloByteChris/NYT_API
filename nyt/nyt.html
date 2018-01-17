@@ -18,6 +18,8 @@
 	<!-- JQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+	<!-- moment.js -->
+	<script src="js/moment.js"></script>
 
 </head>
 <body>
@@ -39,16 +41,19 @@
 	</div><!-- end wrapper -->
 </body>
 
+
 <script>
+
 	// API Key: c64d0a52048b48ec8c6f20d3f4930160
 
 	var url = "https://api.nytimes.com/svc/topstories/v2/home.json";
 
-	//add the API key to the URL
+	// add the API key to the URL
 	url += '?' + $.param({
 	  'api-key': "c64d0a52048b48ec8c6f20d3f4930160"
 	});
 
+	// Select the section where the articles will be added
 	var artSection = $('#articleSection');
 
 
@@ -59,11 +64,17 @@
 		    url: url,
 		    method: 'GET',
 		}).done(function(data) {
-			console.log(data);
-		    
-		    // create article tags for the first 10 results
-		    // fill articles with the information from the API
-		    for (i=0 ; i < 10; i++) {
+			//console.log(data);
+
+		    //Display the first 10 results 
+		    for (i=0 ; i<10 ; i++) {
+
+		    	// select the date
+		    	var date = data.results[i].created_date;
+		    	// using moment.js, change the format of the date
+				var newDate = moment(date).format('YYYY MM DD');
+
+				// Create the articles using the API data
 		    	artSection.append('<article>' +
 		    		'<a href='+ data.results[i].url +'><h2>'+ data.results[i].title +'</h2></a>' + 
 		    		'<img src='+ data.results[i].multimedia[0].url +' />' +                        
@@ -71,6 +82,7 @@
 		    		'<h3>Summary:</h3>' +
 		    		'<p>'+ data.results[i].abstract +'</p>' +
 		    		'<h3>'+ data.results[i].byline +'</h3>' +
+		    		'<h3>Date: '+ newDate +'</h3>' + 
 		    		'</article');
 			}  
 		
