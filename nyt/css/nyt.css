@@ -5,19 +5,34 @@
 	CTEC 290 API
 
 */
-
+body {
+	background-color: #fff;
+}
 #wrapper {
 	width: 1200px;
 	margin: 0 auto;
+	background-color: #add8e6;
+	padding: 10px;
 }
 
 h1 {
 	margin: 0 auto;
 	text-align: center;
+	padding: 20px;
 }
+
+main{ width: 1200px; }
 
 article {
 	float: left;
-	background-color: #c0c0c0;
-	width: 400px;
+	background-color: #dfdfdf;
+	width: 560px;
+	height: 400px;
+	margin: 10px 10px 10px 10px;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+footer {
+	clear: both;
 }
