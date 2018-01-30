@@ -1,0 +1,102 @@
+Brainstorming for Couve Living
+Chris McGuire
+
+---- Client notes before meeting-----
+Name:  Andi Costello
+New to the area, Notvery web savvy
+Has a blog: couveliving.com . She posts often but the website is incomplete.
+Equity Northwest Properties realestate agent
+Likies these sites:
+	amandahowardrealestate.com "Clean homepage with clear listing search an market valuation tool"
+	yourdreamproperty.ca "Mortgage calculator and ability to recieve alerts"
+	fresyes.com/events "Event calandar"
+
+Goals from client:
+-search local MLS
+-Free home valuation
+-capture contacty information
+-community oriented, more than just a listing site
+
+Greg says:
+-WordPress
+-Lots of Plugins
+-Limit the scope
+
+
+----- Chris's Notes 1/17/2017 -----
+-MLS listings WordPress plugin?
+	-MLS listings are shared via IDX (internet data exchange)
+	-The broker needs MLS username and login for any MLS service to work - or rather just a long key like an API key. We may need to log into her account an generate an API key
+	-Plugins where you enter in listings manually are free. MLS / IDX services costr money. still looking for free
+	-Different MLS have different requirments on how to get the information. I'll need to know who she has the license through
+	-Do able
+
+	https://estatik.net/choose-your-version/
+		-Mortgage calulator
+		-cost $129 for MLS listings
+
+	https://realtyna.com/shop/wpl-shop/
+		-full set of realestate tools for $200. required for MLS listings
+		-The free version does tons of stuff too
+		-Look into this one more to make sure the free version wont work
+
+	ihomefinder
+		-way expensive nevermind
+		-there may be a way to make the free version work if we alredy have a license
+
+	https://idxrealtypro.com/
+		-The free version of this might work
+		-It only does MLs search and listing stuff
+
+	https://simplyrets.com/services
+		-Free version might work
+
+	Lots more
+
+
+-Home Valuation Plugin or API?
+	-Many of the above programs have this
+	-There is also a couple stand alone plugins
+
+-Mortgage calculator?
+	-easy
+
+-Event calander plugin
+	-easy
+
+-Is it within the scope of the project to create my own plugin? Theme?
+	-not really
+
+-Keep in mind that this stuff should be easy to use for the client
+
+-What's SUMO?
+	-A set of tools for interacting the visiters
+	-email lists, welcome mats, email collection, contect grabber buddy
+
+-Notes on CouveLiving.com
+	-WordPress theme: Didi
+	-Menu has:
+		-home (blog)
+		-real estate (also the blog)- turn this into the MLS page
+		-Things to do (blog posts tagged "things to do")
+		-Community (posts with community tag)
+		-Dining (nothing yet)
+		-About (bio)
+		-Contact (simple contact form)
+	-Posts to her blog often. Like once a week. Where does the contetn come from? The content is good it just needs a better presentation.
+	-pages to include:
+		-events
+		-mortgage calculator
+		-home valuation
+
+-Notes on amandahowardrealestate.com
+	-WordPress
+	-BoomTown?? lead generation company? I think they built the site
+	-advanced site. We can do a lot of he features but our site wont be as flashy
+
+-Notes on yourdreamproperty.ca
+	-This site was made by aonther lead generation agency called agent locator
+	-dropdown menues "seller" and "buyer" w/tools listed below
+	-everything zooms in on hover!
+
+-Notes on fresyes.com/events

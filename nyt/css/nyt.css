@@ -4,17 +4,35 @@
 	Chris McGuire
 	CTEC 290 API
 
+	colors:
+
+	#CDFCFF
+	#4E7F82
+	#91CBCF
+	#825C41
+	#CFAA91
+
 */
 
 body {
-	background-color: #fff;
+	background-color: #CDFCFF;
 }
 
 #wrapper {
 	width: 1200px;
 	margin: 0 auto;
-	background-color: #add8e6;
+	background-color: #91CBCF;
 	padding: 10px;
+	border-radius: 50px;
+}
+
+header {
+	width: 600px;
+	background-color: #FFEADA;
+	border-radius: 50px;
+	margin: 10px auto;
+	color: ;
+
 }
 
 h1 {
@@ -29,7 +47,7 @@ main {
 
 article {
 	float: left;
-	background-color: #dfdfdf;
+	background-color: #FFF;
 	width: 560px;
 	height: 425px;
 	margin: 10px 10px 10px 10px;
