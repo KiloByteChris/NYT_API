@@ -4,14 +4,6 @@
 	Chris McGuire
 	CTEC 290 API
 
-	colors:
-
-	background-color #222222
-	article color : #444444
-	headind color : #dadada;
-	link color: #75a340;
-	#CFAA91
-
 */
 
 body {
@@ -22,7 +14,6 @@ body {
 #wrapper {
 	width: 1200px;
 	margin: 0 auto;
-	/*background-color: #EDEBEC;*/
 	padding: 10px;
 	border-radius: 50px;
 }
