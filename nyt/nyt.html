@@ -13,7 +13,11 @@
 	<title>New York Times API</title>
 
 	<!-- CSS -->
+	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/nyt.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
 	<!-- JQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -64,7 +68,7 @@
 		    url: url,
 		    method: 'GET',
 		}).done(function(data) {
-			//console.log(data);
+			console.log(data);
 
 		    //Display the first 10 results 
 		    for (i=0 ; i<10 ; i++) {
@@ -76,8 +80,8 @@
 
 				// Create the articles using the API data
 		    	artSection.append('<article>' +
-		    		'<a href='+ data.results[i].url +'><h2>'+ data.results[i].title +'</h2></a>' + 
-		    		'<img src='+ data.results[i].multimedia[0].url +' />' +                        
+		    		'<img src='+ data.results[i].multimedia[0].url +' />' +
+		    		'<h2><a href='+ data.results[i].url +'>'+ data.results[i].title +'</h2></a>' +                         
 		    		'<h3>Section: '+ data.results[i].section +'</h3>' +
 		    		'<h3>Summary:</h3>' +
 		    		'<p>'+ data.results[i].abstract +'</p>' +
