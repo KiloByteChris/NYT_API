@@ -41,17 +41,13 @@
 		<footer>
 			<p>Chris McGuire 2018</p>
 		</footer>
-
 	</div><!-- end wrapper -->
 </body>
 
 
 <script>
-
 	// API Key: c64d0a52048b48ec8c6f20d3f4930160
-
 	var url = "https://api.nytimes.com/svc/topstories/v2/home.json";
-
 	// add the API key to the URL
 	url += '?' + $.param({
 	  'api-key': "c64d0a52048b48ec8c6f20d3f4930160"
@@ -60,19 +56,14 @@
 	// Select the section where the articles will be added
 	var artSection = $('#articleSection');
 
-
 	$(document).ready(function(){
-
 		// GET data from the API
 		$.ajax({
 		    url: url,
 		    method: 'GET',
 		}).done(function(data) {
-			console.log(data);
-
 		    //Display the first 10 results 
 		    for (i=0 ; i<10 ; i++) {
-
 		    	// select the date
 		    	var date = data.results[i].created_date;
 		    	// using moment.js, change the format of the date
@@ -88,7 +79,6 @@
 		    		'<h3 class="byLine">'+ data.results[i].byline +'</h3>' + 
 		    		'</article');
 			}  
-		
 		}).fail(function(err) {
 		    throw err;
 		});
